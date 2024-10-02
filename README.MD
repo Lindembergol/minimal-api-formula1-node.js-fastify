@@ -1,81 +1,51 @@
-<div align="center">
+# NODE BOILERPLATE
 
-  <img src="./.github/assets/blue-saiyan-bg.png" alt="Logo" height="200">
-  <h1 align="center"><strong>NODE BOILERPLATE - BLUE EDITION</strong></h1>
-  <p align="center">
-	  Don't start a new Node project from zero!<br> Use this simple <b>Nodejs</b> boilerplate with pre-configured <b>Typescript</b> in a modern way.
-  </p>
+**NODE BOILERPLATE** é um ponto de partida simples para seus projetos em Node.js, com TypeScript já configurado de forma moderna e eficiente. Não perca tempo configurando do zero, use este boilerplate para acelerar o desenvolvimento!
 
-</div>
+## 🚀 Tecnologias
 
-<br />
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-  <!-- Badges -->
-<div align="center">
-  
-  [![TypeScript version][ts-badge]][typescript-5-4]
-  [![Node.js version][nodejs-badge]][nodejs]
+### 📦 Dependências
 
-</div>
+- [TypeScript](https://www.npmjs.com/package/typescript): Superset para desenvolvimento em larga escala com JavaScript.
+- [TSX](https://www.npmjs.com/package/tsx): Executa TypeScript (tsx), permitindo que o Node.js rode arquivos TypeScript diretamente.
+- [Tsup](https://www.npmjs.com/package/tsup): Empacota sua biblioteca TypeScript sem necessidade de configuração, utilizando esbuild.
+- [@types/node](https://www.npmjs.com/package/@types/node): Definições de tipos para Node.js.
 
-# 🚀 Technologies
+### 📄 Arquivos Importantes
 
-This code source was developed with the following items:
+- `.gitignore`: Arquivo que ignora pastas como `node_modules`.
+- `.env`: Arquivo de variáveis de ambiente.
+- `tsconfig.json`: Arquivo de configuração do TypeScript.
 
-### 📦 Dependencies
+### ⚡ Scripts Disponíveis
 
-- [typescript][typescript-npm] - Superset for application scale JavaScript development
-- [tsx][tsx-npm] - TypeScript Execute (tsx): Enable Node.js to run TypeScript
-- [tsup][tsup-npm] - Bundle your TypeScript library with no config, powered by esbuild
-- [@types/node][@types/node-npm] - type definitions for node
+- `npm run dist`: Compila os arquivos TypeScript para JavaScript na pasta `dist`.
+- `npm run start:dev`: Inicia o servidor em modo de desenvolvimento com variáveis de ambiente carregadas do `.env`.
+- `npm run start:watch`: Inicia o servidor em modo de desenvolvimento e recarrega automaticamente quando há mudanças no código.
+- `npm run start:dist`: Compila o projeto e executa a versão compilada na pasta `dist`.
 
-### 📄 Files
+## 👨‍💻 Como Usar
 
-- `.gitignore` - Ignore folders like node_modules
-- `.env` - Enviroment variables
-- `tsconfig.json` - Typescript configure Options
+Para clonar e rodar este projeto, você precisará ter o [Git](https://git-scm.com), [Node.js v20+](https://nodejs.org/en/) e [NPM v10+](https://nodejs.org/en/) instalados em seu computador.
 
-### ⚡ Scripts
-
-- `npm run dist`: Compiles TypeScript files to JavaScript in the dist directory.
-- `npm run start:dev`: Runs the server in development mode with environment variables loaded from the .env file.
-- `npm run start:watch`: Runs the server in development mode with support for automatic reload on file changes.
-- `npm run start:dist`: Compiles the project and runs the compiled version from the dist directory.
-
-# 👨‍💻 How To Use
-
-click in **[Use this template]** OR
-
-To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v20+](https://nodejs.org/en/) + [NPM v10+](https://nodejs.org/en/) installed on your computer. From your command line:
+No seu terminal, execute os seguintes comandos:
 
 ```bash
-# Clone this repository
-$ git clone https://github.com/felipeAguiarCode/node-blue-boilerplate
+# Clone o repositório
+$ git clone https://github.com/Lindembergol/minimal-api-formula1-node.js-fastify
 
-# Go into the repository
-$ cd node-blue-boilerplate
+# Entre na pasta do projeto
+$ cd minimal-api-formula1-node.js-fastify
 
-# Install dependencies
+# Instale as dependências
 $ npm install
+
 ```
 
-## Author
+## 🌱 Usos Futuros
 
-| [<img src="https://avatars3.githubusercontent.com/u/37452836?s=96&v=4"><br><sub>Felipe Aguiar</sub>](https://github.com/felipeAguiarCode) |
-| :---------------------------------------------------------------------------------------------------------------------------------------: |
-|                                            [Linkedin](www.linkedin.com/in/felipe-aguiar-exe/)                                             |
+Este projeto, embora simples, foi criado para servir como uma base mínima para uma API. Ele pode ser facilmente expandido para projetos maiores e mais complexos, como sistemas de microserviços, APIs REST completas ou mesmo backends para aplicativos web e móveis.
 
-# Credits
-
-icons by [Pino Lamanna][dribble-icon]
-
-[typescript]: https://www.typescriptlang.org/
-[typescript-5-4]: https://www.typescriptlang.org/
-[ts-badge]: https://img.shields.io/badge/TypeScript-5.4-blue.svg
-[nodejs-badge]: https://img.shields.io/badge/Node.js->=%2020.00-blue.svg
-[nodejs]: https://nodejs.org/
-[dribble-icon]: https://dribbble.com/Schakalwal
-[typescript-npm]: https://www.npmjs.com/package/typescript
-[tsx-npm]: https://www.npmjs.com/package/tsx
-[tsup-npm]: https://www.npmjs.com/package/tsup
-[@types/node-npm]: https://www.npmjs.com/package/@types/node
+Com sua estrutura inicial já configurada em TypeScript, ele fornece uma base sólida para escalar a aplicação e incluir funcionalidades adicionais conforme necessário. Isso economiza tempo de configuração inicial, permitindo que o foco esteja no desenvolvimento das funcionalidades principais e na construção de um sistema robusto desde o começo.
